@@ -1,0 +1,35 @@
+.container {
+    padding: 24px;
+    height: auto;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin-block: 32px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.themeSwitcher {
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    color: var(--text-color-secondary);
+    margin-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

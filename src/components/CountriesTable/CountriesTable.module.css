@@ -1,0 +1,115 @@
+.heading {
+    display: flex;
+    padding: 20px;
+}
+
+.heading button {
+    border: none;
+    background: transparent;
+}
+
+.headingName,
+.headingPopulation,
+.heading_area,
+.heading_gini {
+    flex: 4;
+
+    color: var(--text-color-secondary);
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headingName {
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background: var(--background-color-light);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    -webkit-transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    -moz-transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    -ms-transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    -o-transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+.row:hover {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.row .name {
+    flex: 4;
+    text-align: left;
+}
+
+.row .population {
+    flex: 4;
+}
+
+.area {
+    flex: 4;
+}
+
+.gini {
+    flex: 4;
+}
+
+.row .flag {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.headingFlag {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.row .flag img {
+    width: 100%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.icon {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+@media (max-width: 720px) {
+
+    .row .area, .heading_area {
+        display: none;
+    }
+
+    .row .gini, .heading_gini {
+        display: none;
+    }
+
+    .row .flag, .headingFlag {
+        display: none;
+    }
+}
